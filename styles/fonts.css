@@ -1,0 +1,13 @@
+/* 
+
+- Font Css
+
+*/
+@font-face {
+    font-family:'Gilroy-Bold' ;
+    src: url(/fonts/gilroy-bold-cufonfonts/Gilroy-Bold.ttf);
+}
+@font-face {
+    font-family:'popins' ;
+    src: url(/fonts/Poppins/Poppins-Regular.ttf);
+}
