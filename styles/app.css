@@ -1,3 +1,12 @@
+
+@font-face {
+    font-family:'Gilroy-Bold' ;
+    src: url(fonts/gilroy-bold-cufonfonts/Gilroy-Bold.ttf);
+}
+@font-face {
+    font-family:'popins' ;
+    src: url(/fonts/Poppins/Poppins-Regular.ttf);
+}
 /* 
 
 - App style
@@ -9,6 +18,8 @@
     --gray:#898B91;
     --font-gilroy-bold:'Gilroy-Bold';
     --font-popins:'popins';
+    --pink:#AE68FA;
+    --dark-blue:#3E4581;
 }
 html {
 font-size: 62.5%; 
@@ -30,9 +41,8 @@ position: relative;
 body {
 font-size: 2rem;
 line-height: 1.5;
-font-family: var(--font-lato);
 background-color: var(--bg-color);
-color: var(--white);
+color: var(--black);
 }
 
 /*
@@ -54,9 +64,117 @@ margin: 0;
 -- Helper Classes
 
 */
-
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* 
 
 - App Style
 
 */
+
+/* 
+
+--------------- Header---------------------
+
+*/
+.header{
+    margin-top: 1rem;
+    font-family:'popins';
+}
+
+/* 
+
+- Header__Nav
+
+*/
+.nav{
+ justify-content: space-around;
+ color: var(--dark-blue);
+}
+.nav__logo{
+
+}
+.nav__links{
+gap: 3rem;
+}
+.nav__link{
+cursor: pointer;
+}
+.nav__link:hover{
+    cursor: pointer;
+    color: var(--pink);
+    transition: .3s;
+}
+.nav__buttons{
+    
+gap: 3rem;
+}
+.nav__button{
+    cursor: pointer;
+    background-color:var(--pink);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: var(--white);
+    border: solid .1rem var(--pink);
+    transition: all .5s ease;
+}
+.nav__button:hover{
+    background-color:var(--white);
+    color: var(--pink);
+    border: solid .1rem var(--pink);
+}
+
+
+
+
+/* 
+
+- Header__Nav
+
+*/
+
+.header__wrapper{
+  margin: 0 10rem;
+  justify-content: space-between;
+}
+.header__content{
+    margin-top: -8rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+}
+.header__title{
+    font-size: 5rem;
+}
+.header__caption{
+    font-size: 1rem;
+}
+.header__buttons{
+gap: 2rem;
+}
+.header__button{
+    cursor: pointer;
+    background-color:var(--pink);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    color: var(--white);
+    border: solid .1rem var(--pink);
+    transition: all .5s ease;
+}
+.header__button:hover{
+    cursor: pointer;
+    background-color:var(--white);
+    color: var(--pink);
+    border: solid .1rem var(--pink);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+}
+.header__image-container{
+
+}
+.header__image{
+
+}
